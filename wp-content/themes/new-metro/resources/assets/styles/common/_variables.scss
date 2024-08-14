@@ -1,0 +1,125 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #525ddc,
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+// btn
+.circlegrow {
+  width: 1px;
+  height: 1px;
+  background: #231f20;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+@mixin btn {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 287px;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #231f20;
+  background: #231f20;
+  color: #fff;
+  font-family: "Avenir", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  transition: 0.2s ease;
+  text-decoration: none;
+
+  .button-text {
+    position: relative;
+    z-index: 5;
+  }
+
+  .second-text {
+    display: none;
+    z-index: 5;
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+
+    .circlegrow {
+      position: relative;
+      z-index: 3;
+      transition: 0.9s ease;
+      transform: scale(350);
+      background:
+        linear-gradient(
+          90deg,
+          #7e39e3 6.05%,
+          #3e63f1 52.37%,
+          #008cfe 92.99%
+        );
+    }
+
+    .button-text {
+      display: none;
+    }
+
+    .second-text {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1695px) {
+    width: 195px;
+    padding: 12px 0;
+    font-size: 13px;
+    border-radius: 12px;
+  }
+}
+
+.blackToPurple {
+  @include btn;
+}
+
+@mixin btn2 {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background:
+    linear-gradient(97deg, #008cfe 0%, #3e63f1 49.58%, #7e39e3 100%),
+    #7e39e3;
+  color: #fff;
+  font-family: "Avenir", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  transition: 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 1200px) {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+.purple {
+  @include btn2;
+}

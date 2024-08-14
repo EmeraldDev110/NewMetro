@@ -1,0 +1,87 @@
+.main {
+  background-image: url("../images/backgroundparallax.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 97px 0;
+  width: 70%;
+  max-width: 1420px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--Off-black, #262626);
+    font-family: "Avenir Next LT Pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143%;
+  }
+
+  p {
+    color: var(--Off-black, #262626);
+    font-family: "Avenir Next LT Pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%; /* 22.88px */
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 25px;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    .decoration-default-left {
+      margin-right: -75px;
+      width: 89px;
+      height: 89px;
+    }
+
+    .decoration-default-right {
+      width: 89px;
+      height: 89px;
+      margin-top: 55px;
+      margin-left: -55px;
+    }
+
+    h1 {
+      font-family: "Avenir", sans-serif;
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 900;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding: 12px 24px 64px 24px;
+
+    .page-header {
+      .decoration-default-left,
+      .decoration-default-right {
+        display: none;
+      }
+
+      h1 {
+        font-size: 72px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.form-container {
+  background-image: url("../images/formbackground.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .form-content {
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1420px;
+    padding: 110px 0;
+  }
+
+  @media (max-width: 1200px) {
+    .form-content {
+      width: 100%;
+      padding: 42px 24px;
+    }
+  }
+}

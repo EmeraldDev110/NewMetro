@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("../fonts/AvenirNextLTPro.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf") format("truetype");
+  font-display: swap;
+}
+
+.title-question {
+  color: #262626;
+  font-family: "Avenir Next LT Pro", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+
+  @media (max-width: 1880px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 1695px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 1200px) {
+    font-weight: 800;
+    font-size: 24px;
+  }
+}
+
+.title-answer {
+  font-family: "Avenir", sans-serif;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 0.62px;
+  background:
+    linear-gradient(
+      82deg,
+      #008cfe -35.19%,
+      #3e63f1 38.75%,
+      #7e39e3 115.71%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: 1880px) {
+    font-size: 58px;
+  }
+
+  @media (max-width: 1695px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 40px;
+  }
+}

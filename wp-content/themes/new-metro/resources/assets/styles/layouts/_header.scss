@@ -1,0 +1,40 @@
+.banner {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 95px;
+
+  .navbar {
+    width: 70%;
+    max-width: 1420px;
+    padding: 10px 0;
+
+    .navbar-logo {
+      cursor: pointer;
+      height: auto;
+      width: 100px;
+    }
+
+    .navbar-certification {
+      /* cursor: pointer; */
+      height: auto;
+      width: 145px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .navbar {
+      width: 100%;
+      padding: 10px 24px;
+
+      .navbar-logo {
+        width: 62px;
+      }
+
+      .navbar-certification {
+        cursor: pointer;
+        width: 98px;
+      }
+    }
+  }
+}

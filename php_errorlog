@@ -1,0 +1,6 @@
+[02-Aug-2024 11:27:27 UTC] PHP Warning:  Undefined array key "host" in /home/customer/www/newmetro.com/public_html/wp-includes/canonical.php on line 716
+[02-Aug-2024 11:27:27 UTC] PHP Warning:  Undefined array key "host" in /home/customer/www/newmetro.com/public_html/wp-includes/canonical.php on line 727
+[02-Aug-2024 11:27:27 UTC] PHP Warning:  Undefined array key "host" in /home/customer/www/newmetro.com/public_html/wp-includes/canonical.php on line 716
+[02-Aug-2024 11:27:27 UTC] PHP Warning:  Undefined array key "host" in /home/customer/www/newmetro.com/public_html/wp-includes/canonical.php on line 727
+[02-Aug-2024 14:21:56 UTC] wp_auto_login: trying to login user_id==1 loginusername=alphaDev to admin_url=https://newmetro.com/wp-admin/
+[13-Aug-2024 21:45:02 UTC] wp_auto_login: trying to login user_id==1 loginusername=alphaDev to admin_url=https://newmetro.com/wp-admin/
